@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Requests — Marsa Clinic</title>
+    <meta
+      name="description"
+      content="Request list for the Marsa Clinic concept. Pending and confirmed visits stored in this browser."
+    />
+    <meta name="theme-color" content="#e7ebe6" />
+    <meta property="og:title" content="Marsa Clinic — requests" />
+    <meta property="og:description" content="A local request list for the clinic concept." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../og.png" />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="../fonts/faces.css" />
+    <script type="module" crossorigin src="../assets/admin-DBvi1cDd.js"></script>
+    <link rel="modulepreload" crossorigin href="../assets/store-nXOAXkyK.js">
+    <link rel="stylesheet" crossorigin href="../assets/store-DAsR7z-H.css">
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="shell">
+      <header class="bar">
+        <div>
+          <p class="mark">Marsa Clinic</p>
+          <p class="sub">Request list · Concept</p>
+        </div>
+        <a href="../">New request</a>
+      </header>
+      <main id="main">
+        <h1>Requests on this browser</h1>
+        <p class="intro">
+          Pending until you confirm them. Nothing here was sent anywhere. Clearing site data
+          removes the list.
+        </p>
+        <div class="filters" role="group" aria-label="Filter by status">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="pending" aria-pressed="false">Pending</button>
+          <button type="button" data-filter="confirmed" aria-pressed="false">Confirmed</button>
+        </div>
+        <p class="count" id="count"></p>
+        <p class="vh" id="live" aria-live="polite"></p>
+        <div id="list"></div>
+      </main>
+    </div>
+  </body>
+</html>
