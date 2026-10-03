@@ -162,7 +162,7 @@ const page = await browser.newPage({
 try {
   await page.goto(pathToFileURL(htmlPath).href, { waitUntil: "load" });
   const fonts = await page.evaluate(async () => {
-    await document.fonts.load("500 96px Newsreader", "Corniche Studio");
+    await document.fonts.load("500 96px Newsreader", "Brightline Studio");
     await document.fonts.load("400 32px Barlow", "Web pages and short video.");
     await document.fonts.load("400 26px Barlow", "ALEXANDRIA");
     await document.fonts.ready;
